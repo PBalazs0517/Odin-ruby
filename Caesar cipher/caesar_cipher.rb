@@ -1,15 +1,10 @@
-#method to check if a character is upper or lower case
-def is_upper?(letter_to_test)
-    letter_to_test == letter_to_test.upcase
-end
-
 #main function
 def caesar_cipher(str, shift_amount)
 
     alphabat = ("a".."z").to_a
     chars_of_str = str.chars
     finish_str = ""
-    
+
     chars_of_str.each do | char |
         if alphabat.any? { | letter_of_alphabat | letter_of_alphabat == char }  
             index_to_shift = alphabat.index(char)
