@@ -7,7 +7,7 @@ def caesar_cipher(str, shift_amount)
             index_to_shift = alphabat.index(char)
             shift_amount.times do 
                 index_to_shift += 1
-                if index_to_shift == 27  
+                if index_to_shift == 26  
                     index_to_shift = 0
                 end
             end
@@ -16,7 +16,7 @@ def caesar_cipher(str, shift_amount)
             index_to_shift = alphabat.index(char.downcase)
             shift_amount.times do 
                 index_to_shift += 1
-                if index_to_shift == 27  
+                if index_to_shift == 26  
                     index_to_shift = 0
                 end
             end
